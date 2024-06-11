@@ -29,5 +29,8 @@ RUN wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor 
 # Definir o diretório de trabalho
 WORKDIR /workspace
 
+# Criar um volume para persistir dados
+VOLUME ["/workspace"]
+
 # Comando padrão ao iniciar o contêiner
 CMD ["bash"]
