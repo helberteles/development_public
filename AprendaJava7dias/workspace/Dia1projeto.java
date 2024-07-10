@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class Desafio {
+public class Dia1projeto {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite o primeiro numero: ");
-        double numero1 = scanner.nextDouble();
+        int numero1 = scanner.nextInt();
 
         System.out.print("Digite o segundo numero: ");
-        double numero2 = scanner.nextDouble();
+        int numero2 = scanner.nextInt();
 
-        double resultado = numero1 + numero2;
+        int resultado = numero1 + numero2;
 
         System.out.print("A soma de " + numero1 + " + " + numero2 + " eh: " + resultado +"\n");
 
