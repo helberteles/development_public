@@ -1,0 +1,128 @@
+### Escopo do Projeto na AWS
+
+#### Objetivo
+Criar uma tabela no BigQuery e exibi-la no Looker Studio, utilizando serviços da AWS para armazenamento e processamento de dados.
+
+#### Ferramentas e Serviços da AWS
+
+1. **Armazenamento e Consulta de Dados**
+   - **Amazon S3**:
+     - Armazenar dados brutos e arquivos CSV ou JSON.
+     - **AWS Glue**: Catalogar e transformar dados armazenados no S3.
+   - **Amazon Athena**:
+     - Consultar dados armazenados no S3 usando SQL.
+     - Integrar com Looker Studio para criar relatórios e visualizações.
+   
+2. **Banco de Dados Relacional**
+   - **Amazon RDS**:
+     - Utilizar uma instância RDS (MySQL, PostgreSQL, etc.) para dados estruturados.
+     - **Amazon Aurora** (opcional): Banco de dados relacional compatível com MySQL e PostgreSQL com desempenho e escalabilidade melhorados.
+
+3. **Infraestrutura de Computação**
+   - **Amazon EC2**:
+     - Configurar instâncias EC2 para executar aplicativos, scripts e processos de backend.
+     - Utilizar para criar um ambiente de desenvolvimento ou aplicação web.
+
+4. **Gerenciamento e Monitoramento**
+   - **Amazon CloudWatch**:
+     - Monitorar recursos da AWS, coletar e rastrear métricas, e configurar alarmes.
+   - **AWS IAM**:
+     - Gerenciar permissões e acessos para diferentes serviços e recursos da AWS.
+
+5. **Segurança e Rede**
+   - **Amazon VPC**:
+     - Configurar redes virtuais para isolar e proteger recursos, se necessário.
+   - **AWS KMS**:
+     - Gerenciar chaves de criptografia para proteger dados em trânsito e em repouso.
+
+6. **Integração com Looker Studio**
+   - **Amazon Athena**:
+     - Configurar para que Looker Studio possa consultar dados diretamente armazenados no S3.
+
+7. **Backup e Recuperação**
+   - **Amazon RDS Backup**:
+     - Configurar backups automáticos e snapshots para recuperação de dados.
+
+#### Etapas do Projeto
+
+1. **Planejamento**
+   - Definir requisitos e arquitetura.
+   - Configurar contas e permissões na AWS.
+
+2. **Configuração e Implementação**
+   - **Amazon S3**: Criar buckets e configurar permissões.
+   - **AWS Glue**: Configurar catálogos e transformações de dados.
+   - **Amazon Athena**: Configurar tabelas e consultas.
+   - **Amazon RDS**: Configurar e provisionar a instância do banco de dados.
+   - **Amazon EC2**: Configurar instâncias e ambientes de desenvolvimento.
+
+3. **Integração com Looker Studio**
+   - Configurar a conexão do Athena com Looker Studio.
+   - Criar e testar relatórios e visualizações.
+
+4. **Monitoramento e Manutenção**
+   - Monitorar recursos com CloudWatch.
+   - Gerenciar acessos e permissões com AWS IAM.
+
+5. **Backup e Recuperação**
+   - Configurar backups regulares e testes de recuperação.
+
+6. **Conclusão**
+   - Revisar e ajustar conforme necessário.
+   - Documentar o projeto e fazer a transição para produção.
+
+### Considerações Adicionais
+
+- **Custo**: Monitore o uso e os custos dos serviços, especialmente se você estiver utilizando recursos fora do Free Tier.
+- **Segurança**: Garanta que todas as conexões e dados estejam protegidos, e que as permissões estejam corretamente configuradas.
+
+
+==================
+
+### Definição do Projeto
+
+#### **Objetivo**
+Desenvolver um projeto de laboratório pessoal para demonstrar habilidades de colaboração e uso de tecnologias específicas, com foco em:
+1. **Coleta e Processamento de Dados**: Trabalhar com dados de amostra não estruturados (JSON).
+2. **Consulta e Extração de Dados**: Construir consultas para extrair informações relevantes.
+3. **Visualização de Dados**: Exibir os dados processados no Looker Studio.
+
+#### **Descrição do Projeto**
+- **Contexto**: Este projeto é um laboratório pessoal para demonstrar a capacidade de trabalhar em equipe e aplicar tecnologias modernas em um cenário realista.
+- **Dados**: Utilizar dados de amostra em formato JSON, que são não estruturados. Esses dados podem incluir registros de eventos, logs, informações de usuários, etc.
+- **Tecnologias**: Utilizar serviços da AWS para armazenar, processar e consultar dados, e integrar com Looker Studio para visualização.
+
+#### **Etapas do Projeto**
+
+1. **Preparação dos Dados**
+   - **Fontes de Dados**: Obter arquivos JSON que contenham dados de amostra.
+   - **Armazenamento**: Utilizar **Amazon S3** para armazenar os arquivos JSON.
+   - **Catalogação**: Utilizar **AWS Glue** para catalogar os dados e preparar para consulta.
+
+2. **Processamento e Consulta**
+   - **Transformação**: Processar os dados JSON e transformá-los em um formato adequado para consulta, se necessário.
+   - **Consulta**: Utilizar **Amazon Athena** para construir e executar consultas SQL sobre os dados armazenados no S3.
+     - Exemplo de query: Extrair informações relevantes como métricas de desempenho, tendências de eventos, etc.
+
+3. **Visualização**
+   - **Integração com Looker Studio**: Configurar a conexão entre o Amazon Athena e o Looker Studio para importar dados e criar relatórios.
+   - **Criação de Relatórios**: Desenvolver relatórios e painéis no Looker Studio para exibir dados relevantes extraídos das consultas.
+
+4. **Documentação e Apresentação**
+   - **Documentação**: Documentar o processo, incluindo as etapas de preparação dos dados, construção das consultas, e configuração dos relatórios.
+   - **Apresentação**: Preparar uma apresentação ou demonstração que mostre o funcionamento do projeto, os resultados obtidos e a colaboração com a equipe.
+
+#### **Tecnologias e Serviços Utilizados**
+
+- **Armazenamento de Dados**: Amazon S3
+- **Processamento e Consulta**: Amazon Athena
+- **Catalogação**: AWS Glue
+- **Visualização**: Looker Studio
+- **Infraestrutura**: Amazon EC2 (opcional, para desenvolvimento ou execução de scripts)
+
+#### **Objetivos do Projeto**
+- Demonstrar a capacidade de trabalhar em colaboração com outra pessoa.
+- Aplicar tecnologias da AWS para processamento e consulta de dados.
+- Integrar dados com Looker Studio para criar visualizações úteis e informativas.
+- Documentar e apresentar o projeto de forma clara e eficaz.
+
